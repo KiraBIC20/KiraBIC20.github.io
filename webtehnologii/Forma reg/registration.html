@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html long="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="vienport" content="wight-devise-wight, initial-scale=1.0">
+        <title>Регистрация на конференции</title>
+        <link rel="stylesheet" type="text/css" href="../Forma anketa/styles.css">
+    </head>
+    <body> <!-- Шапка сайта-->
+<header>
+</header>
+<main> <!-- Основное содержимое сайта-->
+   <h2> 
+    Регистрация на конференции
+    </h2>
+
+<form action="ob.php" method="POST">
+   <div>
+     <label for="user_name">Фамилия, имя, отчество </label>
+     <input type="text" name="user_name" id="user_name" 
+     required placeholder="полностью"
+     pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+">
+</div>
+<div>
+    <label for="tel">Контактный телефон</label>
+    <input type="text" name="tel" id="tel" required
+    value="+7" pattern="[+]+[0-9]+" maxlength="12">
+</div>
+<div>
+    <label for="email">Адрес электронной почты</label>
+    <input type="text" name="email" id="email" required>
+</div>
+<div>
+    <label for="section">Выберите тему конференции</label> <br>
+    <select name="section" id="section" required>
+     <option value="mat">математика</option>  
+     <option value="fiz">физика</option>
+     <option value="inf">информатика</option> 
+    </select>
+</div>
+<label for="date">Дата рождения</label> <br>
+    <input type="date" name="date" id="date">
+    <div>
+        <label for="speaker">Участие с докладом:</label>
+        <input type="checkbox" name="speaker" id="speaker">
+    </div>
+    <div>
+        <label for="report">Введите тему Вашего доклада</label> <br>
+        <textarea name="report" id="report" cols="30" rows="3" required></textarea>    
+    </div>
+    <div>
+        <div>Выберите форму участия</div>
+        <input type="radio" checked value="Очная" name="edutype" id="offline"><label for="offline">Очная форма</label><br>
+        <input type="radio" value="Дистанционная" name="edutype" id="online"><label for="online">Дистанционная форма</label><br>
+        <input type="radio" value="Смешанная" name="edutype" id="offline_online"><label for="offline_online">Смешанная форма</label>
+    </div>
+<div>
+    <input type="submit" value="Зарегистрироваться">
+</div>
+</form>
+</main>
+<footer>
+    <nav>
+        <ul>
+           <li> <a href="../Forma reg/tablica.php">Список зарегистрированных</a></li> 
+        </ul>  
+        <ul>
+        </nav>
+</footer> <!-- подвал сайта-->
+    </body>
+    <html/>

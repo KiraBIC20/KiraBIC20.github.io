@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method post</title>
+    <link rel="stylesheet" type="text/css" href="../Forma anketa/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="/register" method="POST" name="Form">
+            <div class="col1">
+                <div class="form-control">
+                    <input type="text" required name="userName">
+                    <label>Имя</label>
+                </div>
+            </div>
+
+
+            <div class="form-control">
+                <input type="text" required name="userSurname">
+                <label>Фамилия</label>
+            </div>
+
+            <div class="col2">
+
+                <div class="form-control">
+                    <input type="text" required name="login">
+                    <label>Логин</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" required>
+                    <label>Пароль</label>
+                </div>
+
+            </div>
+        </form>
+
+
+        <div class="radiogroup">
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="day-1" name="day" value="Mon">
+                <label for="day-1">Понедельник</label>
+            </div>
+
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="day-2" name="day" value="Tues">
+                <label for="day-2">Вторник</label>
+            </div>
+
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="day-3" name="day" value="Wed">
+                <label for="day-3">Среда</label>
+
+
+            </div>
+            <div class="radio">
+                <input class="custom-radio" type="radio" id="day-4" name="day" value="Thurs">
+                <label for="day-4">Четверг</label>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="checkgroup">
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="test" name="test" value="yes">
+                <label for="test">Тест</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="sob" name="sob" value="yes">
+                <label for="sob">Собеседование</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="doc" name="doc" value="yes">
+                <label for="doc">Доклад</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="kr" name="kr" value="yes">
+                <label for="kr">Контрольная работа</label>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+            <select size="1">
+                <option value="1">математика</option>
+                <option value="2">физика</option>
+                <option value="3">информатика</option>
+                <option value="4">химия</option>
+            </select>
+        </div>
+        <div>
+            <label for="report">Дополнительная информация</label> <br>
+            <textarea name="report" id="report" cols="55" rows="3" required></textarea> <br> <br>
+        </div>
+
+        <form action="/index2.html" onsubmit="Add()">
+
+            <button class="btn" type="submit" value="Submit">Отправить</button>
+            <div class="info"></div><br><br><br>
+        </form>
+
+
+    </div>
+
+    <script src="../Форма-анкета/app.js"></script>
+    <script src="../Форма-анкета/script.js"></script>
+
+</body>
+
+</html>

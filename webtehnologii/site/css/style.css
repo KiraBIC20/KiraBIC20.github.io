@@ -1,0 +1,16 @@
+body{
+  background-color: rgba(0, 225, 255, 0.651);  
+}
+header{
+    background-color: rgba(255, 0, 200, 0.26); 
+}
+main{
+    background-color: rgba(255, 0, 221, 0.301); 
+}
+aside{
+    background-color: rgba(255, 0, 255, 0.253); 
+}
+footer{
+    background-color: rgba(255, 0, 200, 0.205); 
+    color: rgb(18, 1, 250);
+}

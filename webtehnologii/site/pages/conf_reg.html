@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html long="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="vienport" content="wight-devise-wight, initial-scale=1.0">
+        <title>Регистрация на конференции</title>
+        <link rel="stylesheet" type="text/css" href="../Форма-анкета/styles.css">
+    </head>
+    <body> <!-- Шапка сайта-->
+<header>
+    <h1>Веб-технлологии</h1>
+<nav>
+  <ul>
+     <li> <a href="pages/login.html">Авторизация</a></li> 
+     <li> <a href="#">Фотогалерея</a></li> 
+     <li> <a href="#">Сообщения</a></li> 
+     <li> <a href="#">Верстка по макету</a></li> 
+  </ul>  
+</nav>
+</header>
+<main> <!-- Основное содержимое сайта-->
+   <h2> 
+    Регистрация на конференции
+    </h2>
+<!-- 1. Создать форму регистрации участников конференции: (10 баллов)
+
+Имя (должны быть указаны полностью фамилия, имя и отчество), 
+контактный телефон,
+адрес электронной почты, 
+список с секциями конференции (математика, физика, информатика)
+дата рождения
+доклад (переключатель), 
+если есть доклад – то отображается поле для ввода темы.  -->
+<form action="" method="post">
+   <div>
+     <label for="user_name">Фамилия, имя, отчество </label>
+     <input type="text" name="user_name" id="user_name" 
+     required placeholder="полностью"
+     pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+">
+</div>
+<div>
+    <label for="tel">Контактный телефон</label>
+    <input type="tel" name="tel" id="tel" required
+    value="+7" pattern="[0-9]+" maxlength="11">
+</div>
+<div>
+    <label for="email">Адрес электронной почты</label>
+    <input type="email" name="email" id="email" required>
+</div>
+<div>
+    <label for="section">Выберите секцию конференции</label> <br>
+    <select name="section" id="section" required>
+     <option value="mat">математика</option>  
+     <option value="fiz">физика</option>
+     <option value="inf">информатика</option> 
+    </select>
+</div>
+<label for="date">Дата рождения</label> <br>
+    <input type="date" name="date" id="date">
+    <div>
+        <label for="speaker">Участие с докладом:</label>
+        <input type="checkbox" name="speaker" id="speaker">
+    </div>
+    <div>
+        <label for="report">Введите тему Вашего доклада</label> <br>
+        <textarea name="report" id="report" cols="30" rows="3" required></textarea>    
+    </div>
+    <div>
+        <div>Выберите форму участия</div>
+        <input type="radio" checked value="Очная" name="edutype" id="offline"><label for="offline">Очная форма</label><br>
+        <input type="radio" value="Дистанционная" name="edutype" id="online"><label for="online">Дистанционная форма</label><br>
+        <input type="radio" value="Смешанная" name="edutype" id="offline_online"><label for="offline_online">Смешанная форма</label>
+    </div>
+<div>
+    <input type="submit" value="Зарегистрироваться">
+</div>
+</form>
+</main>
+<aside>
+    это боковая панель
+</aside>
+<footer>
+    <h3>подвал</h3>
+</footer> <!-- подвал сайта-->
+    </body>
+    <html/>
